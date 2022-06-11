@@ -67,8 +67,8 @@ class _profileState extends State<profile> {
             children: [
               statwidget("age", Colors.pink, 18, "34",
                   Color.fromARGB(255, 152, 18, 119), 12),
-              statwidget("téléphone", Colors.pink, 18, "0132564389",
-                  Color.fromARGB(255, 152, 18, 119), 12),
+              statwidget("téléphone", Color.fromARGB(255, 79, 77, 78), 18,
+                  "0132564389", Color.fromARGB(255, 152, 18, 119), 12),
               statwidget("mail", Colors.pink, 18, "moGastemb@icloud.com",
                   Color.fromARGB(255, 152, 18, 119), 12),
             ],
@@ -91,11 +91,9 @@ class _profileState extends State<profile> {
               SizedBox(
                 width: 12.0,
               ),
-              OutlineButton(
-                color: Colors.pink,
+              TextButton(
                 onPressed: () {},
                 child: Text("Message"),
-                padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 5.0),
               )
             ],
           ),
